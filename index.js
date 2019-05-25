@@ -15,14 +15,15 @@
 
 class Rectangle {
   //set up
-  constructor () {
+  constructor (_width, _height, _color) {
     console.log('The Rectangle is being created');
 
-    this.width = 5;
-    this.height = 3;
-    this.color = 'blue';
+    this.width = _width;
+    this.height = _height;
+    this.color = _color;
 
   }
 }
 
-let myRectangle1 = new Rectangle();
+let myRectangle1 = new Rectangle(3, 5, 'blue');
+let myRectangle2 = new Rectangle(5, 10, 'red');
