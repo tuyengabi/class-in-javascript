@@ -49,4 +49,11 @@ class Square {
     this.width = _width;
     this.height = _width;
   }
+
+  get area () {
+    return this.width * this.height;
+  }
 }
+
+let square1 = new Square(25);
+console.log(square1.area);
