@@ -53,7 +53,18 @@ class Square {
   get area () {
     return this.width * this.height;
   }
+
+  set area (area) {
+    this.width = Math.sqrt(area);
+    this.height = this.width;
+  }
 }
 
-let square1 = new Square(25);
+let square1 = new Square(4);
 console.log(square1.area);
+
+let square2 = new Square();
+square2.area = 25;
+console.log(square2.area);
+console.log(square2.width);
+console.log(square2.height);
