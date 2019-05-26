@@ -48,6 +48,7 @@ class Square {
   constructor (_width) {
     this.width = _width;
     this.height = _width;
+    this.diagonal = _width * Math.sqrt(2);
   }
 
   get area () {
@@ -57,14 +58,17 @@ class Square {
   set area (area) {
     this.width = Math.sqrt(area);
     this.height = this.width;
+    this.diagonal = this.width * Math.sqrt(2);
   }
 }
 
 let square1 = new Square(4);
 console.log(square1.area);
+console.log(square1.diagonal);
 
 let square2 = new Square();
 square2.area = 25;
 console.log(square2.area);
 console.log(square2.width);
 console.log(square2.height);
+console.log(square2.diagonal);
