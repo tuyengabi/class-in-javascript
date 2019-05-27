@@ -49,9 +49,11 @@ class Square {
     this.width = _width;
     this.height = _width;
     this.diagonal = _width * Math.sqrt(2);
+    this.numOfRequestsForArea = 0;
   }
 
   get area () {
+    this.numOfRequestsForArea++;
     return this.width * this.height;
   }
 
@@ -64,6 +66,9 @@ class Square {
 
 let square1 = new Square(4);
 console.log(square1.area);
+console.log(square1.area);
+console.log(square1.area);
+console.log(square1.numOfRequestsForArea);
 console.log(square1.diagonal);
 
 let square2 = new Square();
