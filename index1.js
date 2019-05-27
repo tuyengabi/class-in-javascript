@@ -7,11 +7,15 @@ class Square {
   static equals (a, b) {
     return a.width * a.height === b.width * b.height;
   }
+
+  static isValidDimensions (width, height) {
+    return width === height;
+  }
 }
 
 
 let square1 = new Square(8);
 let square2 = new Square(9);
 
-
+console.log(Square.isValidDimensions(6,6));
 console.log(Square.equals(square1, square2));
