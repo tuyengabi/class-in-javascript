@@ -19,10 +19,18 @@ class Programmer extends Person {
     this.yearOfExperience = _yearOfExperience;
   }
 
+  code () {
+    console.log(`${this.name} is coding`);
+  }
 }
 
 let person1 = new Person("a", 20);
 let programmer1 = new Programmer("b", 40, 10);
+
+person1.describe();
+//person1.code();
+programmer1.describe();
+programmer1.code();
 
 console.log(person1);
 console.log(programmer1);
