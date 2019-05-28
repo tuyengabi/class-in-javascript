@@ -24,13 +24,22 @@ class Programmer extends Person {
   }
 }
 
-let person1 = new Person("a", 20);
-let programmer1 = new Programmer("b", 40, 10);
+const programmers = [
+  new Programmer("tuyen",31,11),
+  new Programmer("tri",22,2)
+];
 
-person1.describe();
-//person1.code();
-programmer1.describe();
-programmer1.code();
+function developer(programmers) {
+  for (let programmer of programmers) {
+    programmer.code();
+  }
+}
+
+developer(programmers);
+/* person1.describe();
+   person1.code();
+   programmer1.describe();
+   programmer1.code(); 
 
 console.log(person1);
-console.log(programmer1);
+console.log(programmer1); */
