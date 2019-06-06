@@ -1,1 +1,3 @@
-# class-in-javascript
+# JAVASCRIPT CLASSES TUTORIEL
+
+Pratiquer autonome 
