@@ -15,6 +15,7 @@ class Dog extends Animal {
   }
 
   makeSound() {
+    super.makeSound();
     console.log("Woof! Woof!");
   }
 }
