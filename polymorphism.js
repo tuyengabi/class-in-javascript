@@ -18,3 +18,9 @@ class Dog extends Animal {
     console.log("Woof! Woof!");
   }
 }
+
+const ani1 = new Animal("dau");
+const ani2 = new Dog("den");
+
+ani1.makeSound();
+ani2.makeSound();
